@@ -7,11 +7,12 @@ If a name has 4 letters in it, you can be sure that it has to be a friend of you
 Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 '''
 
-
-def friend(x):
+def friend(x):   
+    friends = []
     for i in x:
-        if len(i) != 4: x.remove(i)           
-    return x
+        if len(i) == 4:
+            friends.append(i)
+    return friends
 
 # Test Case
 print(friend(["Ryan", "Kieran", "Mark", ]))
