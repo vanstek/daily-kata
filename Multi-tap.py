@@ -1,4 +1,5 @@
 #Multi-tap Keypad Text Entry on an Old Mobile Phone
+#Level: 6kyu
 '''
 Prior to the development of T9 (predictive text entry) systems, the method to type words was called "multi-tap" and involved pressing a button repeatedly to cycle through the possible values.
 
