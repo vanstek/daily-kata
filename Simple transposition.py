@@ -17,3 +17,7 @@ def simple_transposition(text):
     first.extend(second)
     out = ''.join(first)
     return out
+
+#BETTER SOLUTION:
+def simple_transposition(text):
+    return text[0::2] + text[1::2]
