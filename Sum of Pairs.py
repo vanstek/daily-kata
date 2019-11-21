@@ -6,8 +6,7 @@ return the first two values (parse from the left please) in order of appearance 
 '''
 
 
-#this is not good code, bad because o(n^2)
-
+#incorrect because O(n^2)
 def sum_pairs(ints, s):
     out = [None] * 2
     diff = len(ints)
@@ -22,9 +21,9 @@ def sum_pairs(ints, s):
     
     
     
-    #solution code
- 
- def sum_pairs(ints, s):
+#solution code
+
+def sum_pairs(ints, s):
     d = set()
     for n in ints:
       if n in d: return [s - n, n]
