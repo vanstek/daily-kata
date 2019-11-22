@@ -15,3 +15,13 @@ def compute_depth(n):
             if int(x) in digits:                 
                 digits.remove(int(x)) 
     return i
+
+
+#this solution is better. is 0(n) through set usage
+def compute_depth(n):
+    i = 0
+    digits = set()
+    while len(digits) < 10:
+        i += 1
+        digits.update(str(n * i))
+    return i
