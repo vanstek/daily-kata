@@ -1,0 +1,9 @@
+#
+#
+'''
+'''
+import string
+def words_to_marks(s):
+    return sum(string.ascii_lowercase.index(l) + 1 for l in s)
+        
+   
